@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step2</title>
+    <script src="slider.js"></script>
+    <link rel="stylesheet" href="style2 — копия.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="block1">
+        <div class="boxes">
+          <div class="box active">Rostov-on-Don, Admiral</div>
+          <div class="box">Sochi Thieves</div>
+          <div class="box">Rostov-on-Don Patriotic</div>
+        </div>
+        <div class="grid-conteiner-1">
+          <article class="post-1-1">
+            <div class="post-inner-1">
+              <p class="grid-text-color1-1">Completed projects</p>
+              <p class="post1-txt-1">
+                Only a small part of the work performed by our company is
+                presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+              </p>
+            </div>
+          </article>
+          <article class="post-2-1">
+            <div class="post-inner-1">
+              <h3 class="grid-text-color-1">City:</h3>
+              <p class="city active">Rostov-on-Don LCD admiral</p>
+              <p class="city">Sochi Thieves</p>
+              <p class="city">Rostov-on-Don Patriotic</p>
+            </div>
+          </article>
+          <article class="post-3-1">
+            <div class="post-inner-1">
+              <h3 class="grid-text-color-1">apartment area:</h3>
+              <p class="area active">81 m2</p>
+              <p class="area">105 m2</p>
+              <p class="area">93 m2</p>
+            </div>
+          </article>
+          <article class="post-4-1">
+            <div class="post-inner-1">
+              <h3 class="grid-text-color-1">Repair time:</h3>
+              <p class="time active">3.5 months</p>
+              <p class="time">4 months</p>
+              <p class="time">3 months</p>
+            </div>
+          </article>
+          <article class="post-5-1">
+            <div class="post-inner-1">
+              <h3 class="grid-text-color-1">Repair Cost:</h3>
+              <p>Upon request</p>
+            </div>
+          </article>
+          <div id="slider">
+            <input type="range" min="1" max="3" step="1" value="1">
+            <img
+              src="images/slide1.jpg"
+              alt="Изображение 1"
+             class="active"
+             />
+           <img src="images/slide2.jpg" alt="Изображение 2" />
+           <img src="images/slide3.jpg" alt="Изображение 3" />
+          </div>
+          <div id="image-info" class="text-info"></div>
+          <div class="slider-nav">
+            <div class="pagination">
+              <button onclick="prevImage()">
+                <img src="images/Group.svg" alt="">
+              </button>
+              <div class="dots-container">
+                <div class="dot active" onclick="showImage(0)"></div>
+                <div class="dot" onclick="showImage(1)"></div>
+                <div class="dot" onclick="showImage(2)"></div>
+              </div>
+              <button onclick="nextImage()">
+              <img src="images/Group (1).svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>     
+      </div>
+      
+  </body>
+</html>
